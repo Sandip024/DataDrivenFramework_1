@@ -22,7 +22,7 @@ public class AddCustomerTest extends TestBase {
 	public void addCustomerTest(Hashtable<String,String> data) throws InterruptedException, IOException {
 		
 		//verifyEquals("abc", "xyz");
-		
+		//added this line just to test if changes are reflecting on github or not.
 		click("addCustBtn_Xpath");
 		
 		type("firstname_Xpath", data.get("firstname"));
