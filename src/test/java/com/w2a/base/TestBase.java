@@ -8,8 +8,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.jsoup.select.Evaluator.IsEmpty;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -36,6 +39,8 @@ public class TestBase {
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
 	public static ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
+	public static String browser;
+	
 	
 	
 	//setup method before any test suite
@@ -57,8 +62,7 @@ public class TestBase {
 
 			log = Logger.getLogger(TestBase.class.getName());
 
-			// ******************************* logs have been used in below part of the
-			// code*****************************************
+			// **********************logs have been used in below part of the code ******************************
 
 			// ********************** Initialize config properties file
 			// ************************************************************
@@ -77,6 +81,20 @@ public class TestBase {
 
 			// ********************** Initialize browser
 			// ***************************************************************************
+			
+			
+			//This will help us to choose browser from jenkins
+			
+			if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty()) {
+				
+				browser = System.getenv("browser");
+			}else
+			{
+				browser = config.getProperty("browser");
+			}
+			
+			config.setProperty("browser", browser);
+			
 			if (config.getProperty("browser").equals("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
@@ -86,15 +104,17 @@ public class TestBase {
 			if (config.getProperty("browser").equals("firefox")) {
 				System.setProperty("webdriver.gecko.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
-				driver = new ChromeDriver();
+				driver = new FirefoxDriver();
 				log.info("Starting Firefox");
 			} else if (config.getProperty("browser").equals("edge")) {
-				System.setProperty("webdriver.chrome.driver",
+				System.setProperty("webdriver.edge.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\msedgedriver.exe");
-				driver = new ChromeDriver();
+				driver = new EdgeDriver();
 				log.info("Starting Edge");
 			}
 
+			// openig URL
+			
 			driver.get(config.getProperty("testsiteurl"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
