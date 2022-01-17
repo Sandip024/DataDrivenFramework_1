@@ -12,7 +12,7 @@
 <body>
 <h1>Login-Test</h1>
 <p>
-  Test duration: 4.425s
+  Test duration: 10.067s
 </p>
 
 
@@ -28,23 +28,46 @@
                   bankManagerLoginTest
       </td>
   <td class="duration">
-    4.425s
+    10.067s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Click image below to see failed test Screenshot
+                        Click image below to see failed test Screenshot:-
                                 <br>
                                 <br>
-                                <a target="_blank" href=Fri_Oct_29_19_27_28_IST_2021.jpg><img src=Fri_Oct_29_19_27_28_IST_2021.jpg height=200 width=200></img></a>
+                                <a target="_blank" href=Thu_Nov_18_03_50_24_IST_2021.jpg><img src=Thu_Nov_18_03_50_24_IST_2021.jpg height=200 width=200></img></a>
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Login not successful</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[3]/div/div[2]/div/div[1]/div[2]/button&quot;}<br/>
+&nbsp; (Session info: chrome=95.0.4638.69)<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;SANDY&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\sandip\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65469}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 33113b49b4998ba6e2fb29fd6a8fded5<br/>
+*** Element info: {Using=xpath, value=/html/body/div[3]/div/div[2]/div/div[1]/div[2]/button}</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              com.w2a.testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:21)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              com.w2a.base.TestBase.click(TestBase.java:132)<br />
+              com.w2a.testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:19)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />

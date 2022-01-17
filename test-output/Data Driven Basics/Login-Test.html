@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 29 19:27:24 IST 2021</td>
+<td>Started on:</td><td>Thu Nov 18 03:51:35 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5019 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10438 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,64 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.w2a.testcases.BankManagerLoginTest.bankManagerLoginTest()'><b>bankManagerLoginTest</b><br>Test class: com.w2a.testcases.BankManagerLoginTest<br/>
-<a href="#Output-844872102" onClick='toggleBox("Output-844872102", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1373361892" onClick='toggleBox("Output-1373361892", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-844872102" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-844872102">
-Click image below to see failed test Screenshot<br/>
+<a href="#Output-1373361892" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1373361892">
+Click image below to see failed test Screenshot:-<br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Oct_29_19_27_28_IST_2021.jpg><img src=Fri_Oct_29_19_27_28_IST_2021.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Thu_Nov_18_03_51_46_IST_2021.jpg><img src=Thu_Nov_18_03_51_46_IST_2021.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: Login not successful
-	at com.w2a.testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:21)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace844872102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace844872102'><pre>java.lang.AssertionError: Login not successful
-	at org.testng.Assert.fail(Assert.java:96)
-	at com.w2a.testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:21)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[3]/div/div[2]/div/div[1]/div[2]/button&quot;}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SANDY&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\sandip\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a663b771c757c46692c276ab18fec5a0
+*** Element info: {Using=xpath, value=/html/body/div[3]/div/div[2]/div/div[1]/div[2]/button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.w2a.base.TestBase.click(TestBase.java:132)
+	at com.w2a.testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:19)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373361892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373361892'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[3]/div/div[2]/div/div[1]/div[2]/button&quot;}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SANDY&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\sandip\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56863}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a663b771c757c46692c276ab18fec5a0
+*** Element info: {Using=xpath, value=/html/body/div[3]/div/div[2]/div/div[1]/div[2]/button}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.w2a.base.TestBase.click(TestBase.java:132)
+	at com.w2a.testcases.BankManagerLoginTest.bankManagerLoginTest(BankManagerLoginTest.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,8 +160,8 @@ Click image below to see failed test Screenshot<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
-<td>com.w2a.testcases.BankManagerLoginTest@126945f9</td></tr>
+<td>10</td>
+<td>com.w2a.testcases.BankManagerLoginTest@2d6764b2</td></tr>
 </table><p>
 </body>
 </html>
