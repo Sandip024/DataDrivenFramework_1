@@ -1,0 +1,4 @@
+INFO    2021-11-18 03:48:41,964 [main] com.w2a.base.TestBase  - config file has been loaded
+INFO    2021-11-18 03:48:41,965 [main] com.w2a.base.TestBase  - OR file has been loaded
+INFO    2021-11-18 03:48:43,009 [main] com.w2a.base.TestBase  - Starting Chrome
+INFO    2021-11-18 03:48:46,398 [main] com.w2a.base.TestBase  - Opened URL
