@@ -12,7 +12,6 @@ public class PopUpTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		//I am doing this just push code to different repo
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
